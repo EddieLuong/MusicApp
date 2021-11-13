@@ -4,16 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./assets/Fonts/themify-icons/themify-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/Fonts/fontawesome-free-5.15.4-web/css/all.min.css">
-    <!-- <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css"> -->
+    <link rel="stylesheet" href="./assets/Fonts/themify-icons/themify-icons.css">
 </head>
 <body>
    <div class="music_player">
@@ -22,8 +19,7 @@
                     <p>Now playing:</p>
                     <h3>Sting 57th & 9th</h3>
            </header>
-           <div class="cd-rolling">
-            <img src="https://leerit.com/media/blog/uploads/2017/02/06/music3.jpg" alt="cd">
+           <div class="cd-rolling" style="background-image: url('https://leerit.com/media/blog/uploads/2017/02/06/music3.jpg');">
            </div>
            <div class="handle_Buttons">
                <div class="icon-repeat">
@@ -32,9 +28,9 @@
                <div class="icon-prev">
                 <i class="fas fa-step-backward"></i>
                 </div>
-                <div class="icon-play">
-                <i class="fas fa-pause icon-pause"></i>
-                <i class="fas fa-play icon-play"></i>
+                <div class="pause-play">
+                <i class="fas fa-pause icon-pause pausing"></i>
+                <i class="fas fa-play icon-play "></i>
                 </div>
                 <div class="icon-next">
                     <i class="fas fa-step-forward"></i>
@@ -47,103 +43,7 @@
                <audio src="" id="audio"></audio>
        </div>
 
-       <div class="playlist">
-           <div class="song">
-               <div class="thumb" style="background-image: url(https://static-zmp3.zadn.vn/skins/common/logo600.png);">
-                </div>
-                <div class="song-infor">
-                    <h4>Song name</h4>
-                    <p>Song author</p>
-                </div>
-                <div class="icon-more">
-                    <i class="ti-more-alt"></i>
-                </div>
-            </div>
-            <div class="song">
-                <div class="thumb" style="background-image: url(https://static-zmp3.zadn.vn/skins/common/logo600.png);">
-                 </div>
-                 <div class="song-infor">
-                     <h4>Song name</h4>
-                     <p>Song author</p>
-                 </div>
-                 <div class="icon-more">
-                     <i class="ti-more-alt"></i>
-                 </div>
-             </div>
-             <div class="song">
-                <div class="thumb" style="background-image: url(https://static-zmp3.zadn.vn/skins/common/logo600.png);">
-                 </div>
-                 <div class="song-infor">
-                     <h4>Song name</h4>
-                     <p>Song author</p>
-                 </div>
-                 <div class="icon-more">
-                     <i class="ti-more-alt"></i>
-                 </div>
-             </div>
-             <div class="song">
-                <div class="thumb" style="background-image: url(https://static-zmp3.zadn.vn/skins/common/logo600.png);">
-                 </div>
-                 <div class="song-infor">
-                     <h4>Song name</h4>
-                     <p>Song author</p>
-                 </div>
-                 <div class="icon-more">
-                     <i class="ti-more-alt"></i>
-                 </div>
-             </div>
-             <div class="song">
-                <div class="thumb" style="background-image: url(https://static-zmp3.zadn.vn/skins/common/logo600.png);">
-                 </div>
-                 <div class="song-infor">
-                     <h4>Song name</h4>
-                     <p>Song author</p>
-                 </div>
-                 <div class="icon-more">
-                     <i class="ti-more-alt"></i>
-                 </div>
-             </div>
-             <div class="song">
-                <div class="thumb" style="background-image: url(https://static-zmp3.zadn.vn/skins/common/logo600.png);">
-                 </div>
-                 <div class="song-infor">
-                     <h4>Song name</h4>
-                     <p>Song author</p>
-                 </div>
-                 <div class="icon-more">
-                     <i class="ti-more-alt"></i>
-                 </div>
-             </div>
-             <div class="song">
-                <div class="thumb" style="background-image: url(https://static-zmp3.zadn.vn/skins/common/logo600.png);">
-                 </div>
-                 <div class="song-infor">
-                     <h4>Song name</h4>
-                     <p>Song author</p>
-                 </div>
-                 <div class="icon-more">
-                     <i class="ti-more-alt"></i>
-                 </div>
-             </div>
-             <div class="song">
-                <div class="thumb" style="background-image: url(https://static-zmp3.zadn.vn/skins/common/logo600.png);">
-                 </div>
-                 <div class="song-infor">
-                     <h4>Song name</h4>
-                     <p>Song author</p>
-                 </div>
-                 <div class="icon-more">
-                     <i class="ti-more-alt"></i>
-                 </div>
-             </div>
-       </div>
-       <div class="nav">
-           <i class="ti-home"></i>
-           <i class="fas fa-podcast"></i>
-           <i class="fas fa-play-circle"></i>
-           <i class="ti-search"></i>
-           <i class="ti-menu"></i>
-       </div>
+       <div class="playlist">hllo</div>
    </div>
 </body>
 <script src="./main.js"></script>
