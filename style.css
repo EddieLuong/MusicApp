@@ -12,10 +12,10 @@ html{
 }
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     background-color: #f5f5f5;
-    background-image: linear-gradient(rgb(255, 0, 106),pink);
+    background-image: linear-gradient(360deg,rgb(250, 127, 12),rgb(233, 133, 150));
 }
 .music_player{
     position: fixed;
@@ -44,7 +44,9 @@ body{
     position: fixed;
     z-index: 5;
     box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+    
 }
+
 header {
     text-align: center;
 }
@@ -136,8 +138,9 @@ i.fa-play.icon-play:hover{
     position: absolute;
     margin-right: 5px;
     height: 6px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-radius: 3px 2px 2px 3px;
+    /* border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; */
     background-color: #ec1f55;
 }
 .progress::-webkit-slider-thumb{
@@ -184,7 +187,7 @@ i.fa-play.icon-play:hover{
     background-position: center ;
     border-radius:50%;
 }
-.song-infor{
+.infor{
     width: 80%;
     margin-top: 10px;
     margin-left: 15px;
@@ -193,20 +196,39 @@ i.fa-play.icon-play:hover{
     flex-direction: column;
     align-items: flex-start;
 }
-.song-infor h4{
+.infor h4{
     font-size: 1.4rem;
 }
-.song-infor p{
+.infor p{
     color: rgba(0,0,0,0.3);
+}
+.song.active{
+    background-image: linear-gradient(to right,rgb(216, 83, 83), rgb(231, 137, 195));
+}
+.song.active .infor{
+    color: #fff;
+}
+.song.active p{
+    color: #fff;
+    opacity: 0.4;
+}
+.song.active .ti-more-alt{
+    color: #fff;
 }
 .ti-more-alt{
     font-size: 1.7rem;
     cursor: pointer;
 }
+.ti-more-alt::before{
+    z-index: 3;
+}
 .nav{
     display:none;
 }
-.active{
+i.active{
     color: var(--primary-color);
     opacity: 1;
+}
+.song:active{
+    opacity: 0.8;
 }
